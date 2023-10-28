@@ -1,0 +1,2 @@
+require("rl")
+print("hello")
