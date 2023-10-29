@@ -1,2 +1,1 @@
 require("rl")
-print("hello")
