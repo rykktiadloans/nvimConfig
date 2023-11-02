@@ -92,7 +92,7 @@ return {
                 padding = 6,
                 max_width = 0,
                 max_height = 0,
-                border = "solid",
+                border = "single",
                 win_options = {
                     winblend = 0,
                 },

@@ -6,7 +6,8 @@ return{
         ibl.setup({
             scope = {
                 enabled = false
-            }
+            },
+                indent = { char = "•" },
         })
     end
 }
