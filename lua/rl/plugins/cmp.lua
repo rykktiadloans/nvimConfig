@@ -34,11 +34,13 @@ return {
 			}),
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "luasnip" }, -- For luasnip users.
+				{ name = "luasnip" },
+                {name = "path"},
+                {name = "buffer"}-- For luasnip users.
 				-- { name = 'ultisnips' }, -- For ultisnips users.
 				-- { name = 'snippy' }, -- For snippy users.
 			}, {
-				{ name = "buffer" },
+				--{ name = "buffer" },
 			}),
 		})
 
@@ -61,11 +63,14 @@ return {
 		})
 
 		-- Set up lspconfig.
-		local capabilities = require("cmp_nvim_lsp").default_capabilities()
+		local capabilities = vim.lsp.protocol.make_client_capabilities()
+        capabilities = require("cmp_nvim_lsp").default_capabilities()
 		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 		require("mason-lspconfig").setup_handlers({
 			function(server_name)
-				require("lspconfig")[server_name].setup({ capabilities = capabilities })
+				require("lspconfig")[server_name].setup({
+                    capabilities = capabilities,
+                })
 			end,
 		})
 		vim.keymap.set("n", "<leader>fm", ":lua vim.lsp.buf.format()<CR>")

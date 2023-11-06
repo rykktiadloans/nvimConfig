@@ -9,7 +9,7 @@ return {
 		vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
         require("telescope").setup {
             defaults = {
-                borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" }
+                borderchars = { "═", "║", "═", "║", "╔", "╗", "╝", "╚" }
             }
         }
 	end
