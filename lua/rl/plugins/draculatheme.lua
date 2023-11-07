@@ -8,7 +8,7 @@ return {
             },
             italic_comment = true,
             overrides = function(colors)
-                local cool = colors.cyan
+                local cool = colors.green
                 return {
                     Normal = {bg = "none"},
                     NormalFloat = {bg = "none"},
