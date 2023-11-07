@@ -5,12 +5,12 @@ return {
 		local colors = require("dracula").colors()
 		local draculatheme = {
 			normal = {
-				a = { bg = colors.cyan, fg = colors.bg },
+				a = { bg = colors.green, fg = colors.bg },
 				b = { bg = colors.menu, fg = colors.fg },
 				c = { bg = colors.bg , fg = colors.fg },
 			},
 			insert = {
-				a = { bg = colors.green, fg = colors.bg },
+				a = { bg = colors.cyan, fg = colors.bg },
 				b = { bg = colors.menu, fg = colors.fg },
 				c = { bg = colors.bg , fg = colors.fg },
 			},
