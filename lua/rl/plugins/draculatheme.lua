@@ -14,6 +14,7 @@ return {
                     NormalFloat = {bg = "none"},
                     SignColumn = {bg = "none"},
                     LineNR = {fg = cool},
+                    LineNr = {fg = cool},
                     FloatBorder = {bg = "none", fg = cool},
                     Title = {bg = "none", fg = cool},
                     TelescopeNormal = {link = "NormalFloat"},
@@ -29,6 +30,7 @@ return {
             end
         })
         local colors = require("dracula").colors()
+
         vim.cmd("colorscheme dracula")
     end,
 }
