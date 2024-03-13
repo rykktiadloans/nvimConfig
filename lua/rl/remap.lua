@@ -13,3 +13,5 @@ vim.keymap.set('n', 'Q', "<nop>")
 
 vim.keymap.set('n', '<leader>b', "<nop>")
 vim.keymap.set({'n', "v"}, "<leader>w", "<C-w>")
+vim.keymap.set('n', "<leader>cd", vim.diagnostic.open_float)
+vim.keymap.set('n', "<leader>ca", vim.lsp.buf.code_action)
