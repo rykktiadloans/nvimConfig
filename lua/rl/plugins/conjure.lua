@@ -1,5 +1,5 @@
 return {
-    "nvim-neorg/neorg",
+    "Olical/conjure",
     config = function()
     end
 }

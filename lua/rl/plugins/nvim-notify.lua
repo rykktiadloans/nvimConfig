@@ -1,5 +1,5 @@
 return {
-    "nvim-neorg/neorg",
+    "rcarriga/nvim-notify",
     config = function()
     end
 }
