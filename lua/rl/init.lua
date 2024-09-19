@@ -10,13 +10,16 @@ vim.opt.expandtab = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "C:\\Users\\User\\AppData\\Local\\nvim-data\\undo"
+--vim.opt.undodir = "C:\\Users\\User\\AppData\\Local\\nvim-data\\undo"
 vim.opt.undofile = true
 
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8 
 vim.opt.signcolumn = "yes" 
 vim.opt.isfname:append("@-@")
+vim.opt.showtabline = 2
+
+vim.wo.relativenumber = true
 
 vim.opt.updatetime = 50
 

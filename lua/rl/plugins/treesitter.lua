@@ -20,6 +20,12 @@ require'nvim-treesitter.configs'.setup {
 
   highlight = {
     enable = true,
+    disable = function(lang, buf)
+        if lang == "html" then
+            return true
+        end
+        return false
+    end
 
     -- NOTE: these are the names of the parsers and not the filetype. (for example if you want to
     -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is

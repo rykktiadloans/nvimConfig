@@ -7,19 +7,16 @@ return {
                 comment = "#ABB2BF"
             },
             italic_comment = true,
-            transparent_bg = true,
+            --transparent_bg = true,
             overrides = function(colors)
-                local cool = colors.green
+                local cool = colors.purple
                 return {
-                    Normal = {bg = "none"},
-                    NormalFloat = {bg = "none"},
-                    SignColumn = {bg = "none"},
                     LineNR = {fg = cool},
                     LineNr = {fg = cool},
-                    FloatBorder = {bg = "none", fg = cool},
-                    Title = {bg = "none", fg = cool},
+                    FloatBorder = {fg = cool},
+                    Title = {fg = cool},
                     TelescopeNormal = {link = "NormalFloat"},
-                    TelescopePromptNormal = {bg = "none"},
+                    --TelescopePromptNormal = {bg = "none"},
                     TelescopePromptTitle = {link = "Title"},
                     TelescopeResultsBorder = {link = "FloatBorder"},
                     TelescopePromptBorder = {link = "FloatBorder"},
@@ -27,6 +24,7 @@ return {
                     TelescopePreviewTitle = {link = "Title"},
                     TelescopeResultsTitle = {link = "Title"},
                     TelescopeBorder = {link = "FloatBorder"},
+                    TabLineSel = {bg = colors.selection, fg = cool}
                 }
             end
         })

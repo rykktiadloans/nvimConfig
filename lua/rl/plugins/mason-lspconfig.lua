@@ -3,7 +3,7 @@ return {
     priority = 4,
     config = function()
         require("mason-lspconfig").setup {
-            ensure_installed = { "lua_ls", "bashls", "clangd", "cssls", "html",
+            ensure_installed = { "lua_ls", "bashls",
                 "pyright", "volar"},
         }
    end
