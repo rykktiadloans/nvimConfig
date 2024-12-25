@@ -19,6 +19,7 @@
   "mini.nvim": { "branch": "main", "commit": "7c00ea1a6b35332746e1a2fa768e26c5fa9c3589" },
   "neogit": { "branch": "master", "commit": "9959b58a897036ce89d47385021db1f716613399" },
   "neorg": { "branch": "main", "commit": "4cbedbbdd4ccb6f45a2045477f5658a1311dffa3" },
+  "neovim-latex-previewer": { "branch": "master", "commit": "dd6f7befe827379ee0e79dd58d6f62ad12a72eda" },
   "null-ls.nvim": { "branch": "main", "commit": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7" },
   "nvim-cmp": { "branch": "main", "commit": "04e0ca376d6abdbfc8b52180f8ea236cbfddf782" },
   "nvim-lspconfig": { "branch": "master", "commit": "114bf1875c4adef7c39c86ef538246478b4af87c" },
