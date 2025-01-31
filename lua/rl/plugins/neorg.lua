@@ -1,6 +1,6 @@
 return {
     "nvim-neorg/neorg",
-    version = "v7.0.0",
+    version = "*",
     config = function()
         require("neorg").setup {
             load = {
@@ -8,13 +8,16 @@ return {
                 ["core.concealer"] = {
                     config = {
                         icon_preset = "basic",
+                        folds = true,
                         icons = {
                             ordered = {
                                 icons = { "1", "A", "a", "⑴", "Ⓐ", "ⓐ" },
                             },
+                            --[[
                             list = {
                                 icons = {">"}
                             }
+                            --]]
                         }
                     },
                 },

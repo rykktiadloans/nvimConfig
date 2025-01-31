@@ -21,7 +21,7 @@ return {
                 'Repeat',
                 'Label',
                 'LineNR',
-                'Statement',
+                'Character',
                 'Float',
                 'Structure',
             },

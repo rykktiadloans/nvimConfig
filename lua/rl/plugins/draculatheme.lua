@@ -33,9 +33,9 @@ return {
         vim.cmd("colorscheme dracula")
         if vim.g.neovide then
             vim.o.guifont = "FiraCode Nerd Font Mono:h14"
-            vim.g.neovide_scale_factor = 1.0
+            vim.g.neovide_scale_factor = 0.60
             vim.opt.linespace = 0
-            vim.g.neovide_transparency = 0.65
+            --vim.g.neovide_transparency = 0.65
             vim.g.neovide_theme = "dracula"
             vim.api.nvim_set_hl(0, "Normal", {bg = colors.bg})
             vim.g.neovide_floating_blur_amount_x = 3.0

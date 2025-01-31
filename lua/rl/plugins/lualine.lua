@@ -43,7 +43,7 @@ return {
 			},
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { "'./'..vim.fn.expand('%')" },
+				lualine_b = { "vim.fn.expand('%')" },
 				lualine_c = {},
 				lualine_x = {"diagnostics", "diff", "branch" },
                 --lualine_y = { "branch", "diff", "diagnostics", "searchcount" },
