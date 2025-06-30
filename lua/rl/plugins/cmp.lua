@@ -102,6 +102,42 @@ return {
                 print("CLANGD ATT")
             end
         }
+        lspconfig.emmet_ls.setup {
+            capabilities = capabilities,
+            filetypes = { "html", "css", "javascriptreact", "typescriptreact" }
+        }
+        lspconfig.volar.setup {
+            capabilities = capabilities,
+            filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+            init_options = {
+                vue = {
+                    hybridMode = false,
+                },
+                typescript = {
+                    tsdk = vim.fn.getcwd() .. "/node_modules/typescript/lib",
+                },
+            },
+        }
+        lspconfig.ts_ls.setup {
+            capabilities = capabilities,
+            init_options = {
+                plugins = {
+                    {
+                        name = "@vue/typescript-plugin",
+                        location = vim.fn.stdpath("data") ..
+                            "/mason/packages/vue-language-server/node_modules/@vue/language-server",
+                        languages = { "vue" },
+                    },
+                },
+            },
+            settings = {
+                typescript = {
+                    tsserver = {
+                        useSyntexServer = false
+                    }
+                }
+            }
+        }
         lspconfig.lua_ls.setup {
             on_init = function(client)
                 local path = client.workspace_folders[1].name

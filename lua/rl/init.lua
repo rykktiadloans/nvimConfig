@@ -20,7 +20,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.showtabline = 2
 
-vim.wo.relativenumber = true
+--vim.wo.relativenumber = true
 
 vim.opt.updatetime = 50
 

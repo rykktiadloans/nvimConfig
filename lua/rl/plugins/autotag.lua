@@ -4,6 +4,9 @@ return {
         require 'nvim-treesitter.configs'.setup {
             autotag = {
                 enable = true,
+            },
+            opts = {
+                enable_close_on_slash = true
             }
         }
     end
